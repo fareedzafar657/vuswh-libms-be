@@ -1,0 +1,1183 @@
+{
+	"info": {
+		"_postman_id": "be7d5239-ebae-4285-8022-a28a8e24a319",
+		"name": "Libms",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29867649"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "User - setCreate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"nouman@gmail.com\",\r\n  \"name\": \"Nouman\",\r\n  \"phone\": \"+923134618681\",\r\n  \"departmentId\": \"695ffda1-59f2-11ee-9a98-b44bd6e78818\",\r\n  \"designationId\": \"696a4e7c-59f2-11ee-9a98-b44bd6e78818\",\r\n  \"roleIds\": [\r\n    \"691e15df-59f2-11ee-9a98-b44bd6e78818\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/users/create",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User - getCreate",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/users/create",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User - getUpdate",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/users/update/352c6fc8-6f20-4b73-88c9-ea5162c8d340",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"update",
+								"352c6fc8-6f20-4b73-88c9-ea5162c8d340"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User - setUpdate",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Nauman Khan\",\r\n  \"phone\": \"+923134617689\",\r\n  \"designationId\": \"478baf69-4bd8-11ee-8ee6-e454e8a0f567\",\r\n  \"departmentId\": \"478ab317-4bd8-11ee-8ee6-e454e8a0f567\",\r\n  \"roleIds\": [\r\n    \"477307f4-4bd8-11ee-8ee6-e454e8a0f567\",\r\n    \"06862765-4be0-11ee-8ee6-e454e8a0f567\"\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/users/update/a6db0f27-7067-4510-9aec-ed5c0f523c84",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"update",
+								"a6db0f27-7067-4510-9aec-ed5c0f523c84"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User - Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/users/delete/352c6fc8-6f20-4b73-88c9-ea5162c8d340",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"delete",
+								"352c6fc8-6f20-4b73-88c9-ea5162c8d340"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User - pagedata",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/users/pagedata",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"pagedata"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User - setPermissions",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"permissionIds\": [\"034eaf39-3ff7-4f0e-82bc-53e1d121a9ab\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/users/userpermissions/a6db0f27-7067-4510-9aec-ed5c0f523c84",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"userpermissions",
+								"a6db0f27-7067-4510-9aec-ed5c0f523c84"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User - getPermissions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/users/userpermissions/a6db0f27-7067-4510-9aec-ed5c0f523c84",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"userpermissions",
+								"a6db0f27-7067-4510-9aec-ed5c0f523c84"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Auth - verify Account",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"password\": \"Abc1234%\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/auth/verifyaccount/$2b$10$AQyByLaM6P66RF2iGb-zW.",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"verifyaccount",
+								"$2b$10$AQyByLaM6P66RF2iGb-zW."
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Auth - login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\":\"nauman@gmail.com\",\r\n  \"password\":\"Abc1234%\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/auth/login/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"login",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Auth - Logout",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/auth/logout/a6db0f27-7067-4510-9aec-ed5c0f523c84",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"logout",
+								"a6db0f27-7067-4510-9aec-ed5c0f523c84"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Departments",
+			"item": [
+				{
+					"name": "Departments - create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Department of Politics\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/departments/create",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"departments",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Departments - update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Department of Statsss\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/departments/update/baa91d3b-f35c-4f10-b320-5f05a7108ff0",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"departments",
+								"update",
+								"baa91d3b-f35c-4f10-b320-5f05a7108ff0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Departments - delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/departments/delete/baa91d3b-f35c-4f10-b320-5f05a7108ff0",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"departments",
+								"delete",
+								"baa91d3b-f35c-4f10-b320-5f05a7108ff0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Departments - pagedata",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/departments/pagedata",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"departments",
+								"pagedata"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "Categories - pagedata",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/categories/pagedata",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"categories",
+								"pagedata"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Categories - create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"e-bookk\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/categories/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"categories",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Categories - update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Bookkkk\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/categories/update/170d236e-db96-48c7-a065-afbc92166af2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"categories",
+								"update",
+								"170d236e-db96-48c7-a065-afbc92166af2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Categories - delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/categories/delete/170d236e-db96-48c7-a065-afbc92166af2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"categories",
+								"delete",
+								"170d236e-db96-48c7-a065-afbc92166af2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Categories - lookup",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/publishers/lookup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"publishers",
+								"lookup"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Languages",
+			"item": [
+				{
+					"name": "Languages - create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Arabic\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/languages/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"languages",
+								"create"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "LibMS",
+			"item": [
+				{
+					"name": "Magazine",
+					"item": [
+						{
+							"name": "Magazine - setCreate",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"title\":\"Mr Magazine\",\r\n  \"subTitle\":\"All about animals\",\r\n  \"categoryId\":\"f0bdf45a-578a-11ee-9fc5-e454e8a0f567\",\r\n  \"version_no\":\"2\",\r\n  \"volume_no\":\"13\",\r\n  \"publisherId\":\"f1260399-578a-11ee-9fc5-e454e8a0f567\",\r\n  \"distributerId\":\"f1340415-578a-11ee-9fc5-e454e8a0f567\",\r\n  \"material_typeId\":\"f106546e-578a-11ee-9fc5-e454e8a0f567\",\r\n  \"publishing_date\":\"2023-09-01\",\r\n  \"date_of_purchase\":\"2023-09-06\",\r\n  \"price\": 6.57,\r\n  \"currencyId\":\"f14f94c7-578a-11ee-9fc5-e454e8a0f567\",\r\n  \"total_pages\":35,\r\n  \"languageId\":\"f0e77a40-578a-11ee-9fc5-e454e8a0f567\",\r\n  \"locationId\":\"f0b2b2a8-578a-11ee-9fc5-e454e8a0f567\",\r\n  \"location_placed\":\"5th Shelve 3rd portion 6th book\",\r\n  \"description\":\"A Magazine about animals etc\",\r\n  \"userId\":\"7a8a19e9-3679-4957-91ad-511dde8a6223\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/magazines/create",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"magazines",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Magazine - getCreate",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/magazines/create",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"magazines",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Magazine - getUpdate",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/magazines/update/33",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"magazines",
+										"update",
+										"33"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Magazine - setUpdate",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"title\":\"geo magazine\",\r\n  \"subTitle\":\"geographic locations\",\r\n  \"categoryId\":\"47915b5f-4bd8-11ee-8ee6-e454e8a0f567\",\r\n  \"version_no\":\"1\",\r\n  \"volume_no\":\"13\",\r\n  \"publisherId\":\"2c0b451f-1594-4acf-add5-4cb4de8a1212\",\r\n  \"distributerId\":\"479b5db0-4bd8-11ee-8ee6-e454e8a0f567\",\r\n  \"material_typeId\":\"500592f2-4c9e-11ee-9635-e454e8a0f567\",\r\n  \"publishing_date\":\"2023-09-01\",\r\n  \"date_of_purchase\":\"2023-09-06\",\r\n  \"currencyId\":\"9d9e6452-506d-11ee-bccb-e454e8a0f567\",\r\n  \"total_pages\":35,\r\n  \"languageId\":\"4796f900-4bd8-11ee-8ee6-e454e8a0f567\",\r\n  \"locationId\":\"478e93d5-4bd8-11ee-8ee6-e454e8a0f567\",\r\n  \"location_placed\":\"5th Shelve 3rd portion 6th book\",\r\n  \"description\":\"A Magazine about animals etc\",\r\n  \"userId\":\"a6db0f27-7067-4510-9aec-ed5c0f523c84\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/magazines/update/33",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"magazines",
+										"update",
+										"33"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Magazine - pagedata",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/magazines/pagedata?search=asd",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"magazines",
+										"pagedata"
+									],
+									"query": [
+										{
+											"key": "search",
+											"value": "asd"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Magazine - Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/magazines/delete/6",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"magazines",
+										"delete",
+										"6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Magazine - findOne",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/magazines/lookup/33",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"magazines",
+										"lookup",
+										"33"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "magazine-issuance get",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/magazines/issuance/2",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"magazines",
+										"issuance",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "magazine-issuance set",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " { \"assetId\":\"3\",\r\n \"borrowerId\":\"802d196c-02d2-4039-a484-d5c37ca08e44\",\r\n\"due_date\": \"2013-09-01\",\r\n\"issued_by\":\"589ebeb2-e86d-46b9-bd8e-ff42a6b4bd1e\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/magazines/issuance",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"magazines",
+										"issuance"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "magazine - return",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"return_date\": \"2023-09-18T14:44:14\",\r\n\"remarks_on_return_condition\":\"He dropped tea on book.\",\r\n\"fine_amount\":44.54,\r\n\"returned_by\":\"cac884ce-a8ee-4aba-bb10-94069a588d45\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/magazines/return/68fe2058-07f6-4bba-82a7-eb90e4e243ad",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"magazines",
+										"return",
+										"68fe2058-07f6-4bba-82a7-eb90e4e243ad"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Magazine - return get",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/magazines/return/68fe2058-07f6-4bba-82a7-eb90e4e243ad",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"magazines",
+										"return",
+										"68fe2058-07f6-4bba-82a7-eb90e4e243ad"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Magazines - upload",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/C:/Users/internee/Downloads/Magazine issuance.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3000/magazines/upload/3",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"magazines",
+										"upload",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Magazines - getCover",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/C:/Users/internee/Downloads/Magazine issuance.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3000/magazines/upload/3",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"magazines",
+										"upload",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Magazine - New Arrivals",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Magazines - Search",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Novel",
+					"item": [
+						{
+							"name": "Novel-Issuance set",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " { \"userId\":\"ac2b5864-c8bf-490d-896b-18e3954f2296\",\r\n\"due_date\": \"2013-09-01\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/novels/assets-issuance/24",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"novels",
+										"assets-issuance",
+										"24"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Novel-issuance get",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/novels/assets-issuance/1",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"novels",
+										"assets-issuance",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Novel - New Arrivals",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Novel - getCreate",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Novel - Create",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Novel - getUpdate",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Novel - Update",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Novel - PageData",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Book",
+					"item": [
+						{
+							"name": "Book-Issuance set",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " { \"assetId\":\"1\",\r\n \"borrowerId\":\"5402d5c6-584f-11ee-a972-e454e8a0f567\",\r\n\"due_date\": \"2023-09-03\",\r\n\"issued_by\":\"7a8a19e9-3679-4957-91ad-511dde8a6223\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/books/issuance",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"books",
+										"issuance"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Book-issuance get",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/books/issuance/2",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"books",
+										"issuance",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "New Arrivals",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Book - MagazineData",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Book - PageData",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Journals",
+					"item": [
+						{
+							"name": "Journal-Issuance set",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " { \"userId\":\"ac2b5864-c8bf-490d-896b-18e3954f2296\",\r\n\"due_date\": \"2013-09-01\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/journals/assets-issuance/24",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"journals",
+										"assets-issuance",
+										"24"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "magazine-issuance get",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/Journals/assets-issuance/1",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"Journals",
+										"assets-issuance",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Journal - creat set",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "\r\n{\r\n  \"title\":\"New Journal212334\"\r\n  ,\"subTitle\":\"This is new journal233222\"\r\n  ,\"categoryId\":\"c9313cda-5541-11ee-8856-b44bd6e78818\"\r\n  ,\"volume_no\":\"22445\"\r\n  ,\"publisherId\":\"02abf783-5477-11ee-8995-b44bd6e78818\"\r\n  ,\"material_typeId\":\"027e8705-5477-11ee-8995-b44bd6e78818\"\r\n  ,\"languageId\":\"024c1a17-5477-11ee-8995-b44bd6e78818\"\r\n  ,\"locationId\": \"01d9c91b-5477-11ee-8995-b44bd6e78818\"\r\n  ,\"price\": 19055\r\n  ,\"location_placed\": \"Recks\"\r\n  ,\"userId\": \"ac2b5864-c8bf-490d-896b-18e3954f2296\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/journals/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"journals",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Journal - New Arrivals",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Permissions",
+			"item": [
+				{
+					"name": "Permissions - TreeView",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/permissions/tree",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"permissions",
+								"tree"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
